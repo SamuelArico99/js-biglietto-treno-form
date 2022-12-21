@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: palevioletred;
+}
+.container-white{
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.title, .container, .buttons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.title{
+    color: white;
+}
+.buttons{
+    margin-top: 70px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.container > .col{
+    margin: 0 40px;
+}
+.col > input , .col > select{
+    border: 4px solid palevioletred;
+    font-size: 20px;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+.buttons > button{
+    margin: 0 20px;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: palevioletred;
+}
+h2{
+    margin: 20px;
+    color: palevioletred;
+}
+.container-white-flex{
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.space-between{
+    justify-content: space-between;
+}
+.row{
+    display: flex;
+    padding: 40px;
+}
+.passenger-details{
+    background-color: grey;
+    height: 300px;
+}
+strong, span{
+    font-size: 20px;
+}
+.row > .col{
+    margin: 20px 100px;
+}
+h3, h4{
+    padding: 10px;
+}
+#name{
+    padding: 10px;
+}
+#display{
+    display: none;
+}
+

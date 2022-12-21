@@ -5,29 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <input type="text" placeholder="Inserisci nome">
+    <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container-white">
+        <div class="container">
+            <div class="col">
+                <h2>Inserisci il tuo nome</h2>
+                <input id="name-input" type="text">
+            </div>
+            <div class="col">
+                <h2>Km da percorrere</h2>
+                <input id="km-input" type="number" >
+            </div>
+            <div class="col">
+                <h2>Fascia d' età </h2>
+                <select id="age-select" type="number">
+                    <option value="s">Standard</option>
+                    <option value="m">Minorenne</option>
+                    <option value="o">Over 65</option>
+                </select>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="submit-button">
+                Calcola prezzo
+            </button>
+            <button id="empty-button">
+                Annulla
+            </button>
+        </div>
     </div>
-    <div>
-        <input id="km-input" type="number" placeholder="Inserisci il numero che devi percorrere">
-    </div>
-    <div>
-        <select id="age-select" type="number" placeholder="inserisci la tua età">
-            <option value="s">Standard</option>
-            <option value="m">Minorenne</option>
-            <option value="o">Over 65</option>
-        </select>
+    <div id="display">
+        <h1 class="title">IL TUO BIGLIETTO</h1>
+        <div class="container-white-flex">
+            <div class="col">
+                <h4>DETTAGLIO PASSEGGERI</h4>
+                <div class="passenger-details">
+                    <h3>NOME PASSEGGERO</h3>
+                    <span id="name"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col space-between">
+                    <strong>Offerta</strong>
+                    <span id="offerta">Standard</span>
+                </div>
+                <div class="col space-between">
+                    <strong>Carrozza</strong>
+                    <span id="carrozza"></span>
+                </div>
+                <div class="col space-between">
+                    <strong>Codice CDP</strong>
+                    <span id="codice">Standard</span>
+                </div>
+                <div class="col space-between">
+                    <strong>Costo biglietto</strong>
+                    <span id="costo">€</span>
+                </div>
+            </div>
 
-    </div>
-    <div>
-        <button id="submit-button">
-            Calcola prezzo
-        </button>
-        <button id="empty-button">
-            Annulla
-        </button>
+        </div>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
