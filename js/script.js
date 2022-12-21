@@ -1,8 +1,9 @@
-const kmInput = document.getElementById('km-input')
-const ageInput = document.getElementById('age-input')
-const ageSelect = document.getElementById('age-select')
+const kmInput = document.getElementById('km-input');
+const ageInput = document.getElementById('age-input');
+const ageSelect = document.getElementById('age-select');
 
-const submitButton = document.getElementById('submit-button')
+const submitButton = document.getElementById('submit-button');
+const embtyButton = document.getElementById('empty-button')
 
 submitButton.addEventListener('click',
 
@@ -16,11 +17,14 @@ submitButton.addEventListener('click',
         // Calcolo prezzo biglietto
         const prezzo = 0.21;
         let prezzofinale = prezzo * km;
-        console.log(prezzofinale.toFixed(2));
+
+        if(age == 's'){
+            console.log(prezzofinale.toFixed(2));
+        }
         
         
         // Se il cliente è minorenne va applicato uno sconto del 20%
-        if(age =='m'){
+        if(age == 'm'){
             prezzofinale = (prezzofinale -(prezzofinale / 100)*20);
             console.log(prezzofinale.toFixed(2));
         }
@@ -34,3 +38,9 @@ submitButton.addEventListener('click',
         // Fine
     }
 );
+emptyButton.addEventListener('click',
+    function() {
+       kmInput.value = '' ;
+       ageSelect.value = 's';
+    }
+)
