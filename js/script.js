@@ -8,7 +8,5 @@ submitButton.addEventListener('click',
     function() {
         console.log('kmInput.value', kmInput.value);
         console.log('ageInput.value', ageInput.value);
-
-        const km = kmInput.value
     }
 );
